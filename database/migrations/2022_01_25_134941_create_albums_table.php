@@ -18,7 +18,7 @@ class CreateAlbumsTable extends Migration
             $table->string('name', 60);
             $table->foreignId('artist_id');
             $table->string('genre', 40);
-            $table->string('duration', 20);
+            $table->time('duration');
             $table->foreignId('song_id');
             $table->timestamps();
         });
