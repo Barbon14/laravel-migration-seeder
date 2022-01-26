@@ -22,7 +22,6 @@ class CreateArtistsTable extends Migration
             $table->text('bio')->nullable();
             $table->tinyInteger('album_published')->unsigned();
             $table->bigInteger('total_streaming')->unsigned();
-            $table->string('genre', 40);
             // $table->foreignId('disc_id');
             $table->timestamps();
         });

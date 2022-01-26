@@ -15,6 +15,5 @@ class Artist extends Model
         'bio',
         'album_published',
         'total_streaming',
-        'genre'
     ];
 }
