@@ -13,6 +13,6 @@ class SongSeeder extends Seeder
      */
     public function run()
     {
-        factory(Song::class, 50) -> create;
+        factory(Song::class, 50) -> create();
     }
 }
