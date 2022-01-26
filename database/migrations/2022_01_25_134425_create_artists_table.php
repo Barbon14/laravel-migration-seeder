@@ -15,10 +15,15 @@ class CreateArtistsTable extends Migration
     {
         Schema::create('artists', function (Blueprint $table) {
             $table->id();
-            $table->string('name', 40);
-            $table->string('surname', 40);
+            $table->string('name', 60);
+            $table->string('surname', 60);
+            $table->string('stage_name', 60);
             $table->string('main_genre', 40);
-            $table->foreignId('disc_id');
+            $table->text('bio')->nullable();
+            $table->tinyInteger('album_published')->unsigned();
+            $table->bigInteger('total_streaming')->unsigned();
+            $table->string('genre', 40);
+            // $table->foreignId('disc_id');
             $table->timestamps();
         });
     }
